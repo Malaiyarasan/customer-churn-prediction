@@ -1,72 +1,75 @@
-# Customer Churn Prediction – Machine Learning
+# 🧠 Customer Churn Prediction (Machine Learning Project)
 
-This project predicts which customers are likely to churn using classical
-machine learning models. It focuses on **EDA, feature engineering, and model
-interpretability** – suitable for Data Analyst / ML Engineer roles.
-
----
-
-## 🔍 Problem
-
-A telecom-like company wants to identify customers who might stop using the
-service (churn) so that the business team can take preventive actions such as:
-discounts, personalized offers, or support calls.
+Predict whether a customer will churn using a Random Forest model.  
+This project includes complete data preprocessing, model training, evaluation, and a LIVE demo app.
 
 ---
 
-## 🧠 Approach
+## 🚀 Live Demo  
+Try the model instantly using the hosted Gradio app:
 
-1. **Data Understanding & Cleaning**
-   - Loaded CSV data (one row = one customer).
-   - Handled missing values and inconsistent categories.
-   - Encoded categorical variables (e.g., gender, contract type).
-
-2. **Exploratory Data Analysis (EDA)**
-   - Checked churn rate by tenure, contract type, and monthly charges.
-   - Visualized correlations and churn patterns.
-
-3. **Feature Engineering**
-   - Derived features like:
-     - tenure buckets (0–6, 6–12, 12+ months)
-     - total_spend = monthly_charges * tenure
-   - One-hot encoded categorical variables.
-
-4. **Modeling**
-   - Split dataset into train/test.
-   - Trained:
-     - Logistic Regression (baseline)
-     - Random Forest Classifier (main model)
-   - Used **accuracy, precision, recall, F1-score** to evaluate performance.
-
-5. **Insights**
-   - Identified high-risk churn segments:
-     - Short-tenure customers with high charges.
-     - Month-to-month contract users.
-   - These segments can be targeted with retention campaigns.
+🔗 **https://4b51a75b49cf6975b1.gradio.live**
 
 ---
 
-## 🧰 Tech Stack
+## ▶ Run This Project on Google Colab  
 
-- Python, Pandas, NumPy
-- Scikit-Learn
-- Matplotlib / Seaborn
-- Jupyter Notebook / VS Code
+Click the badge below to open the full training notebook:
+
+[![Run in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Malaiyarasan/customer-churn-prediction/blob/main/notebooks/customer%20churn%20prediction.ipynb)
+
+---
+
+## 📊 Project Overview
+
+This project predicts customer churn using the **Telco Customer Churn dataset**.
+
+### Includes:
+- Data cleaning & preprocessing  
+- Categorical encoding (one-hot encoding)  
+- Train/test split  
+- Random Forest classifier  
+- Evaluation metrics:
+  - Accuracy  
+  - Confusion Matrix  
+  - Classification Report  
+  - ROC-AUC Score  
+- Export model as `.joblib`  
+- Gradio app for real-time predictions  
 
 ---
 
 ## 📁 Project Structure
 
-```text
 customer-churn-prediction/
 │
-├── data/
-│   └── churn_data.csv        # (example dataset placeholder)
+├── models/
+│ └── churn_model.joblib
 │
 ├── notebooks/
-│   └── churn_eda_and_model.ipynb  # EDA + model training (optional)
-│
-├── src/
-│   └── train_model.py        # main training script
+│ └── customer churn prediction.ipynb
 │
 └── README.md
+
+---
+
+## 🛠 Technologies Used
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib, Seaborn  
+- Random Forest Classifier  
+- Gradio (live web app)  
+
+---
+
+## 📥 Download Model  
+The trained model file used in the demo is available in:
+
+
+---
+
+## 👨‍💻 Author  
+**Malaiyarasan M**  
+AI & Data Engineer  
+
